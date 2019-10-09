@@ -1,0 +1,31 @@
+version: '3'
+services:
+
+  rabbitmq:
+    image: 'rabbitmq:latest'
+  
+  notificationexchange:
+    image: 'madhulika/notificationexchange'
+    environment:
+      - RABBITMQ_HOSTNAME=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PSWD=guest
+    ports:
+      - '8081:8081'
+    depends_on:
+      - rabbitmq
+
+  notificationclient:
+    image: 'madhulika/notificationclient'
+    environment:
+      - RABBITMQ_HOSTNAME=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PSWD=guest
+    ports:
+      - '8085:8085'
+    depends_on:
+      - rabbitmq
+      - notificationexchange
+    
