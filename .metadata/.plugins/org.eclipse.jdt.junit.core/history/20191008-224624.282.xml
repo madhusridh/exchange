@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="MessageControllerTest" project="NotificationExchange" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.exchange.controller.MessageControllerTest" time="0.236">
-    <testcase name="messages_postMessage_whenArgsMissing" classname="com.exchange.controller.MessageControllerTest" time="0.224"/>
-    <testcase name="messages_postMessage_whenArgsValid" classname="com.exchange.controller.MessageControllerTest" time="0.012"/>
-  </testsuite>
-</testrun>

@@ -1,5 +1,0 @@
-package com.exchange.configuration;
-
-public class NotificationQueueConfiguration {
-
-}

@@ -2,4 +2,4 @@ target/
 Servers/
 .jar
 .war
-
+.metadata

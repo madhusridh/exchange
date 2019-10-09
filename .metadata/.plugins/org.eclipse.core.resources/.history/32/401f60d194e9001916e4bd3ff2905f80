@@ -1,7 +1,0 @@
-package com.client.repository;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface EventLogRepository extends CrudRepository<T, ID> {
-
-}

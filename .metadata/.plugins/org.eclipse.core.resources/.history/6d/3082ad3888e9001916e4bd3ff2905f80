@@ -1,7 +1,0 @@
-package com.client.receiver;
-
-import java.beans.EventHandler;
-
-public class SlackEventHandlerServiceImpl extends EventHandler {
-
-}

@@ -1,9 +1,0 @@
-package com.exchange.configuration;
-/**
- * This class is used to configure the various direct queues used by the application 
- * @author madhu
- *
- */
-public class NotificationQueueConfiguration {
-
-}

@@ -1,9 +1,0 @@
-package com.exchange.configuration;
-/**
- * This class configures
- * @author madhu
- *
- */
-public class NotificationConfiguration {
-
-}
