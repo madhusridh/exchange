@@ -5,7 +5,7 @@ services:
     image: 'rabbitmq:latest'
   
   notificationexchange:
-    image: 'madhulika/notificationexchange'
+    image: 'madhusrdocker/notificationexchange'
     environment:
       - RABBITMQ_HOSTNAME=rabbitmq
       - RABBITMQ_PORT=5672
@@ -17,7 +17,7 @@ services:
       - rabbitmq
 
   notificationclient:
-    image: 'madhulika/notificationclient'
+    image: 'madhusrdocker/notificationclient'
     environment:
       - RABBITMQ_HOSTNAME=rabbitmq
       - RABBITMQ_PORT=5672
