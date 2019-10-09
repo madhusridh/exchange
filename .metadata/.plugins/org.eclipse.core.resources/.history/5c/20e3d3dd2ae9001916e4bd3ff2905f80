@@ -1,0 +1,5 @@
+package com.client.receiver;
+
+public class EventHandler {
+
+}

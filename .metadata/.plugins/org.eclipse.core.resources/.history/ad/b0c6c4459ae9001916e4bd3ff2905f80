@@ -1,0 +1,19 @@
+package com.client.receiver;
+
+import org.springframework.amqp.core.Message;
+import org.springframework.context.annotation.Configuration;
+/**
+ * This class handles events in the slack queue
+ * @author madhu
+ *
+ */
+@Configuration
+public class SlackEventHandlerServiceImpl implements EventHandlerService {
+
+	@Override
+	public void listenEvent(Message message) {
+		System.out.println("Listened to message " + message);
+		
+	}
+
+}

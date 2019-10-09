@@ -1,0 +1,13 @@
+package com.exchange.configuration;
+
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * This class binds queue with exchange
+ * @author madhu
+ *
+ */
+@Configuration
+public class NotificationBindingConfiguration {
+
+}

@@ -1,0 +1,5 @@
+package com.exchange.controller;
+
+public class Message {
+
+}

@@ -1,0 +1,7 @@
+1570470593846	Rename type 'EventHandler'
+1570510555265	Rename type 'EventHandlerService'
+1570510606515	Rename type 'EventHandlerServiceImpl'
+1570516389527	Delete element
+1570518196695	Rename type 'EventLogRepository'
+1570518290291	Delete element
+1570518404486	Rename type 'EventLogRepositoryCrudImpl'

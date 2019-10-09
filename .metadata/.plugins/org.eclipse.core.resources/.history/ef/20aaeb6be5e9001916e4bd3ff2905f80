@@ -1,0 +1,14 @@
+server.port=8081
+
+spring.rabbitmq.host=${RABBITMQ_HOSTNAME:localhost}
+spring.rabbitmq.port=${RABBITMQ_PORT:5672}
+spring.rabbitmq.username=${RABBITMQ_USER}
+spring.rabbitmq.password=${RABBITMQ_PSWD}
+
+exchange.direct=direct-exchange
+routing.direct.1=email
+routing.direct.2=slack
+
+
+queue.1=email
+queue.2=slack

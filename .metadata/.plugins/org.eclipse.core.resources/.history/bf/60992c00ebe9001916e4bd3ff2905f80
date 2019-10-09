@@ -1,0 +1,9 @@
+package com.exchange.controller;
+/**
+ * This is a test class that is for unit testing the POST method
+ * @author madhu
+ *
+ */
+public class MessageControllerTest {
+
+}

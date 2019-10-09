@@ -1,0 +1,14 @@
+package com.exchange.controller;
+/**
+ * This POJO represents an incoming message and its attributes
+ * @author madhu
+ *
+ */
+public class Message {
+	
+	String from;
+	String to;
+	String messageSubject;
+	String messageBody;
+
+}

@@ -1,0 +1,16 @@
+package com.exchange.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+/**
+ * This is the generic controller class that exposes a REST API for messages to flow through the application
+ * @author madhu
+ *
+ */
+@RestController
+@RequestMapping("/message")
+public class MessageController {
+	
+	
+
+}

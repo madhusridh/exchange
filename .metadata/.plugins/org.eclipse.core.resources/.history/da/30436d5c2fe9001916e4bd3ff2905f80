@@ -1,0 +1,12 @@
+spring.rabbitmq.host=localhost
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=guest
+spring.rabbitmq.password=guest
+
+exchange.direct=direct-exchange
+routing.direct.1=email
+routing.direct.2=slack
+
+
+queue.1=email
+queue.2=slack

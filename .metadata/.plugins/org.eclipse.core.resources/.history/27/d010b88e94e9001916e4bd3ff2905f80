@@ -1,0 +1,14 @@
+package com.client.model;
+
+import javax.persistence.Entity;
+/**
+ * This class 
+ * @author madhu
+ *
+ */
+@Entity
+public class EventLog {
+	
+	private String log;
+
+}
