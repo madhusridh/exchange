@@ -1,0 +1,70 @@
+{
+    "users": [
+        {
+            "name": "guest",
+            "password_hash": "AhyBvIjFTWPHzs8Gwi+KowKnDk3Zt2AH86DOVZ45/Ybts3rm",
+            "hashing_algorithm": "rabbit_password_hashing_sha256",
+            "tags": "administrator"
+        }
+    ],
+    "vhosts": [
+        {
+            "name": "/"
+        }
+    ],
+    "permissions": [
+        {
+            "user": "guest",
+            "vhost": "/",
+            "configure": ".*",
+            "write": ".*",
+            "read": ".*"
+        }
+    ],
+	"queues": [
+        {
+            "name": "email",
+            "vhost": "/",
+            "durable": true,
+            "auto_delete": false,
+            "arguments": {}
+        },
+        {
+            "name": "slack",
+            "vhost": "/",
+            "durable": true,
+            "auto_delete": false,
+            "arguments": {}
+        }
+    ],
+    "exchanges": [
+        {
+            "name": "direct-exchange",
+            "vhost": "/",
+            "type": "direct",
+            "durable": true,
+            "auto_delete": false,
+            "internal": false,
+            "arguments": {}
+        }
+    ],
+    "bindings": [
+        {
+            "source": "direct-exchange",
+            "vhost": "/",
+            "destination": "email",
+            "destination_type": "queue",
+            "routing_key": "email",
+            "arguments": {}
+        },
+        {
+            "source": "direct-exchange",
+            "vhost": "/",
+            "destination": "slack",
+            "destination_type": "queue",
+            "routing_key": "slack",
+            "arguments": {}
+        }
+    ]
+
+}
